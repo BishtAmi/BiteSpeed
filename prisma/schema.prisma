@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+
+model Contact {
+  id             Int       @id @default(autoincrement())
+  phoneNumber    String?   // Optional field for phone number
+  email          String?   // Optional field for email
+  linkedId       Int?      // Optional field for linked contact ID
+  linkPrecedence LinkPrecedence // Enum for link precedence
+  createdAt      DateTime  @default(now()) // Timestamp for creation
+  updatedAt      DateTime  @updatedAt      // Automatically updates on record update
+  deletedAt      DateTime? // Optional field for soft deletion timestamp
+}
+
+enum LinkPrecedence {
+  primary
+  secondary
+}
