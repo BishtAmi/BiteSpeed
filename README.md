@@ -8,11 +8,11 @@
 
 
 
-## endpoint to get all contacts:   https://bitespeed-3nnk.onrender.com/api/get
+- endpoint to get all contacts:   https://bitespeed-3nnk.onrender.com/api/get
 
-## endpoint to post a contact:   https://bitespeed-3nnk.onrender.com/api/postContact
+- endpoint to post a contact:   https://bitespeed-3nnk.onrender.com/api/postContact
 
-## endpoint to identify a contact:  https://bitespeed-3nnk.onrender.com/api/identify
+- endpoint to identify a contact:  https://bitespeed-3nnk.onrender.com/api/identify
 
 ### API Endpoints
 
