@@ -12,7 +12,7 @@
 
 ## endpoint to post a contact:   https://bitespeed-3nnk.onrender.com/api/postContact
 
-## endpoint to identify a contact:  https://bitespeed-3nnk.onrender.com/api/get
+## endpoint to identify a contact:  https://bitespeed-3nnk.onrender.com/api/identify
 
 ### API Endpoints
 
